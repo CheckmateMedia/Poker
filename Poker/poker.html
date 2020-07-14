@@ -1,0 +1,52 @@
+<!DOCTYPE>
+<html>
+<link rel="stylesheet" type="text/css" href="poker.css">
+
+
+<head>
+    <p id="title"><b>Play Poker</b></p>
+    <p id="ante"><b>Ante Up</b></p>
+
+</head>
+
+<body>
+    <p></p>
+    <div id="playCards">
+        <button onclick="done()" id="new">New Hand</button>
+        <div id="players">
+            <span id="p1" class="player"><b>Player 1</b></span>
+            <span id="p2" class="player" id="player2"><b>Player 2</b></span>
+        </div>
+        <div class="cards" id="bothCards">
+            <img class="card" id="S1" src="SPADE-1.svg">
+            <div id="space">
+                <img class="card" id="S2" src="SPADE-2.svg">
+            </div>
+        </div>
+    </div>
+    <button onclick="buttonClick()" id="deal">Deal</button>
+
+    <img id="table" src="Table.png">
+
+</body>
+
+<script>
+    function buttonClick() {
+        document.getElementById("playCards").style.display = "inline-block";
+        document.getElementById("deal").style.display = "none";
+        document.getElementById("deal").style.display = "none";
+        document.getElementById("title").style.display = "none";
+        document.getElementById("ante").style.display = "none";
+        document.getElementByClassname("card").style.display = "none";
+        document.getElementById("new").style.display = "none";
+
+    }
+
+    function done() {
+        document.getElementByClassname("player").style.display = "none";
+        document.getElementById("cards").style.display = "none";
+        document.getElementById("players").style.display = "none";
+    }
+</script>
+
+<script src="poker.js"></script>
