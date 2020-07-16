@@ -1,0 +1,44 @@
+<!DOCTYPE>
+<html>
+<link rel="stylesheet" type="text/css" href="poker.css">
+
+<head id="head">
+    <p id="title"><b>Play Texas Holdem</b></p>
+    <p id="ante"><b>Ante Up</b></p>
+</head>
+
+<body>
+    <!--
+    <div id="banner">
+        <p id="closeButton" onclick="hideBanner()">X</p>
+        <div id="bannerText">Play Texas Holdem</div>
+    </div>
+    -->
+
+    <div id="main">
+        <button onclick="buttonClick()" id="deal">Deal</button>
+        <form id="enter">
+            <p id="input" type="text"><b>Place Your Bet</b></p>
+            <input id="bet">
+            <input id="submit" type="submit" value="Submit">
+        </form>
+        <div id="playArea">
+            <div id="playCards">
+                <button onclick="newHand()" id="done">New Hand</button>
+                <div id="both">
+                    <div class="players">
+                    </div>
+                    <div class="cards" id="bothCards">
+                        <img class="card" id="S1" src="SPADE-1.svg">
+                        <img class="card" id="S2" src="SPADE-2.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="table">
+                <img id="table" src="Table.png">
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="poker.js"></script>
