@@ -1,3 +1,5 @@
+//Test
+
 function buttonClick() {
     //Show
     document.getElementById("playCards").style.display = "block";
@@ -18,12 +20,12 @@ function newHand() {
     document.getElementById("deal").style.position = "relative";
     document.getElementById("table").style.display = "block";
     document.getElementById("table").style.position = "absolute";
-
+    console.log("test")
     //Not working
     document.getElementById("enter").style.display = "inline-block";
 
     //Hide
-    document.getElementById("enter").style.display = "none";
+
     document.getElementById("ante").style.display = "none";
     document.getElementById("title").style.display = "none";
     document.getElementsByClassName("cards")[0].style.display = "none";

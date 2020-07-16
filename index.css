@@ -146,7 +146,7 @@
     position: fixed;
     z-index: 5;
     position: absolute;
-    margin-left: 1em;
+    margin-left: 5em;
     margin-top: 0em;
     padding-top: 0%;
   }
@@ -220,6 +220,15 @@
       float: left;
       margin-top: 0%;
       padding-top: 0%;
+  }
+
+  #purse {
+      margin: 0%;
+      color: white;
+  }
+
+  #bag {
+      margin-top: 10%;
   }
 
 
