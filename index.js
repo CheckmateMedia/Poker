@@ -14,24 +14,20 @@ function buttonClick() {
 
 function newHand() {
     //Show
-    //not showing deal
     document.getElementById("deal").style.display = "inline-block";
     document.getElementById("deal").style.position = "relative";
-
-
-    //works
     document.getElementById("table").style.display = "block";
     document.getElementById("table").style.position = "absolute";
 
+    //Not working
+    document.getElementById("enter").style.display = "inline-block";
+
     //Hide
     document.getElementById("enter").style.display = "none";
-    document.getElementById("deal").style.display = "none";
     document.getElementById("ante").style.display = "none";
     document.getElementById("title").style.display = "none";
     document.getElementsByClassName("cards")[0].style.display = "none";
     document.getElementById("done").style.display = "none";
-
-
 }
 
 function hideBanner() {
