@@ -67,13 +67,14 @@
  #title {
     margin-left: 27%;
     margin-top: 0px;
-    padding-top: 1%;
+    padding-top: 2%;
+    margin-left: 30%;
  }
 
  #ante {
     margin-left: 35%;
     margin-top: 0px;
-    padding-top:5%;
+    padding-top:1%;
  }
 
 #space {
@@ -180,7 +181,7 @@
   }
 
   .head {
-      margin-left: 25%;
+      margin-left: 50%;
   }
 
   #enter {

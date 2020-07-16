@@ -42,6 +42,7 @@ function hideBanner() {
     document.getElementsByClassName("cards")[0].style.display = "block";
 }
 
-function submit() {
-
+function bet() {
+    document.getElementById("purse").innerhtml = 500;
+    console.log("4x4")
 }
