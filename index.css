@@ -80,13 +80,13 @@
 #space {
     margin-left: 5em;
 }
-
+/*
 @media screen and (max-width:1910px) {
     #head, body {
         width: 100%;
     }
 }
-
+*/
 #playCards {
     display: none;
     margin-top: 0%;
