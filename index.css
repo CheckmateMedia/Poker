@@ -39,7 +39,7 @@ body {
 
 /* Media Query */
 @media screen and (max-width:500px) {
-    .card {
+    .card, #table {
         width: 50%;
     }
 }
