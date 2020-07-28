@@ -61,7 +61,8 @@ body {
     }
 
     .deal {
-        margin-bottom: 3em;
+        margin-bottom: 0em;
+        margin-top: 3em;
     }
     
 }
