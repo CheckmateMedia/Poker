@@ -2,6 +2,13 @@ body {
     background: linear-gradient(#6498e6, #19334f);
 }
 
+#intro {
+    font-size: 2em;
+    color: sandybrown;
+    margin-left: 20%;
+    margin-top: 1em;
+}
+
 .deal {
     background-color: sandybrown;
     font-size: 2em;
