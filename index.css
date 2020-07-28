@@ -5,13 +5,13 @@ body {
 #intro {
     font-size: 2em;
     color: sandybrown;
-    margin-left: 20%;
+    margin-left: 33%;
     margin-top: 1em;
     position: fixed;
 }
 
 #table {
-    margin-top: 5em;
+    margin-top: 1em;
 }
 
 .deal {
@@ -31,6 +31,10 @@ body {
 
 #one {
     display: none;
+}
+
+#one, #two {
+    margin-left: 15%;
 }
 
 #first {
@@ -55,7 +59,5 @@ body {
     button {
         width: 50%;
     }
-    #into {
-      padding-bottom: 5%;  
-    }
+    
 }
