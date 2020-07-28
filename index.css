@@ -7,14 +7,39 @@ body {
     color: sandybrown;
     margin-left: 20%;
     margin-top: 1em;
+    position: fixed;
+}
+
+#table {
+    margin-top: 5em;
 }
 
 .deal {
     background-color: sandybrown;
     font-size: 2em;
     cursor: pointer;
+ 
+}
+
+#firstDeal {
+    margin-bottom: 2em;
+}
+
+#firstDealButton {
+    margin-top: 2em;
 }
 
 #one {
     display: none;
+}
+
+#first {
+    padding-top: 0%;
+}
+
+/* Media Query */
+@media screen and (max-width:500px) {
+    .card {
+        width: 50%;
+    }
 }
