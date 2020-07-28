@@ -1,0 +1,46 @@
+<!DOCTYPE>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="index.css">-->
+
+
+<body onload="bet()" style=" background: linear-gradient(#6498e6, #19334f);">
+
+    <div id="banner" style="float: left;">
+        <p id="closeButton" onclick=" hideBanner()">
+            <b>
+                X</b></p>
+        <div id="bannerText" style="float: left; margin-left: 5%;">Play Texas Holdem</div>
+    </div>
+
+
+    <div id="main">
+        <button onclick="buttonClick()" id="deal">Deal</button>
+
+        <form id="enter">
+            <p id="input" type="text"><b>Place Your Bet</b></p>
+            <input id="bet">
+            <input style="cursor: pointer;" id="submit" type="submit" value="Submit">
+            <div id="bag"><b>Your purse:</b></div>
+            <div id="purse"></div>
+        </form>
+        <div id="playArea" style="display: none;">
+            <div id="playCards">
+                <button style="display: none; cursor: pointer;" onclick="newHand()" id="done">New Hand</button>
+                <div id="both">
+                    <div class="players">
+                    </div>
+                    <div class="cards" id="bothCards">
+                        <img class="card" id="S1" src="SPADE-1.svg">
+                        <img class="card" id="S2" src="SPADE-2.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="table">
+                <img id="table" src="Table.png">
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="index.js"></script>
