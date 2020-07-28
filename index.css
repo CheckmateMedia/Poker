@@ -37,6 +37,11 @@ body {
     padding-top: 0%;
 }
 
+.card {
+    float: left;
+    padding-right: 2em;
+}
+
 /* Media Query */
 @media screen and (max-width:500px) {
     .card, #table {
