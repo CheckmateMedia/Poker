@@ -55,4 +55,7 @@ body {
     button {
         width: 50%;
     }
+    #two {
+      margin-top: 5%;  
+    }
 }
