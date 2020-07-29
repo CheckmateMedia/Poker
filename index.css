@@ -1,3 +1,5 @@
+
+
 body {
     background: linear-gradient(#6498e6, #19334f);
 }
@@ -21,8 +23,9 @@ body {
  
 }
 
-#firstDeal {
+#secondDeal {
     margin-bottom: 2em;
+    
 }
 
 #firstDealButton {
@@ -31,6 +34,7 @@ body {
 
 #one {
     display: none;
+    margin-top: 15%;
 }
 
 #one, #two {
@@ -44,14 +48,24 @@ body {
 .card {
     float: left;
     padding-right: 2em;
+    display: none;
+    float: left;
+    height: 30%;
+    
+}
+
+.cards {
+    margin-left: 15%;
 }
 
 /* Media Query */
 @media screen and (max-width:500px) {
     .card {
         width: 40%;
+        display: none;
         
     }
+
     #table {
         width: 90%;
     }
@@ -67,4 +81,3 @@ body {
    
 
     
-}
