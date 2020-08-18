@@ -1,0 +1,145 @@
+<!DOCTYPE>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="index.css">
+<header id="footer">Created by Checkmate Media</header>
+<div id="intro"><b>Play Texas Holdem<br>Against the Computer</b></div><br><br>
+<button id="outro" onclick="reload()">Restart</button><br><br>
+<div id="one">
+    <button class="deal" id="firstDealButton" onclick="deal()">Deal</button><br>
+    <button class="deal" id="secondDealButton" onclick="deal2()">Deal 2</button><br>
+    <img id="table" src="Table.png">
+</div>
+<br>
+<div id="two">
+    <button style=" cursor: pointer;" onclick="newHand();" class="deal" id="secondDeal">New Hand</button><br>
+    <button style=" cursor: pointer;" onclick="newHand2();" class="deal" id="thirdDeal">New Hand2</button><br>
+    <div class="cards" id="bothCards">
+        <div id="players">
+            <div id="player1">
+
+                <!--Clubs-->
+                <img class="card" id="c1" src="CLUB-1.svg">
+                <img class="card" id="c2" src="CLUB-2.svg">
+                <img class="card" id="c3" src="CLUB-3.svg">
+                <img class="card" id="c4" src="CLUB-4.svg">
+                <img class="card" id="c5" src="CLUB-5.svg">
+                <img class="card" id="c6" src="CLUB-6.svg">
+                <img class="card" id="c7" src="CLUB-7.svg">
+                <img class="card" id="c8" src="CLUB-8.svg">
+                <img class="card" id="c9" src="CLUB-9.svg">
+                <img class="card" id="c10" src="CLUB-10.svg">
+                <img class="card" id="c11" src="CLUB-11-JACK.svg">
+                <img class="card" id="c12" src="CLUB-12-QUEEN.svg">
+                <img class="card" id="c13" src="CLUB-13-KING.svg">
+                <!--Spades-->
+                <img class="card" id="s1" src="SPADE-1.svg">
+                <img class="card" id="s2" src="SPADE-2.svg">
+                <img class="card" id="s3" src="SPADE-3.svg">
+                <img class="card" id="s4" src="SPADE-4.svg">
+                <img class="card" id="s5" src="SPADE-5.svg">
+                <img class="card" id="s6" src="SPADE-6.svg">
+                <img class="card" id="s7" src="SPADE-7.svg">
+                <img class="card" id="s8" src="SPADE-8.svg">
+                <img class="card" id="s9" src="SPADE-9.svg">
+                <img class="card" id="s10" src="SPADE-10.svg">
+                <img class="card" id="s11" src="SPADE-11-JACK.svg">
+                <img class="card" id="s12" src="SPADE-12-QUEEN.svg">
+                <img class="card" i d="s13" src="SPADE-13-KING.svg">
+                <!--Hearts-->
+                <img class="card" id="h1" src="HEART-1.svg">
+                <img class="card" id="h2" src="HEART-2.svg">
+                <img class="card" id="h3" src="HEART-3.svg">
+                <img class="card" id="h4" src="HEART-4.svg">
+                <img class="card" id="h5" src="HEART-5.svg">
+                <img class="card" id="h6" src="HEART-6.svg">
+                <img class="card" id="h7" src="HEART-7.svg">
+                <img class="card" id="h8" src="HEART-8.svg">
+                <img class="card" id="h9" src="HEART-9.svg">
+                <img class="card" id="h10" src="HEART-10.svg">
+                <img class="card" id="h11" src="HEART-11-JACK.svg">
+                <img class="card" id="h12" src="HEART-12-QUEEN.svg">
+                <img class="card" id="h13" src="HEART-13-KING.svg">
+                <!--Diamonds-->
+                <img class="card" id="d1" src="DIAMOND-1.svg">
+                <img class="card" id="d2" src="DIAMOND-2.svg">
+                <img class="card" id="d3" src="DIAMOND-3.svg">
+                <img class="card" id="d4" src="DIAMOND-4.svg">
+                <img class="card" id="d5" src="DIAMOND-5.svg">
+                <img class="card" id="d6" src="DIAMOND-6.svg">
+                <img class="card" id="d7" src="DIAMOND-7.svg">
+                <img class="card" id="d8" src="DIAMOND-8.svg">
+                <img class="card" id="d9" src="DIAMOND-9.svg">
+                <img class="card" id="d10" src="DIAMOND-10.svg">
+                <img class="card" id="d11" src="DIAMOND-11-JACK.svg">
+                <img class="card" id="d12" src="DIAMOND-12-QUEEN.svg">
+                <img class="card" id="d13" src="DIAMOND-13-KING.svg">
+            </div>
+            <div id="player2">
+                Woof
+                <!--Clubs-->
+                <img class="card" id="c1" src="CLUB-1.svg">
+                <img class="card" id="c2" src="CLUB-2.svg">
+                <img class="card" id="c3" src="CLUB-3.svg">
+                <img class="card" id="c4" src="CLUB-4.svg">
+                <img class="card" id="c5" src="CLUB-5.svg">
+                <img class="card" id="c6" src="CLUB-6.svg">
+                <img class="card" id="c7" src="CLUB-7.svg">
+                <img class="card" id="c8" src="CLUB-8.svg">
+                <img class="card" id="c9" src="CLUB-9.svg">
+                <img class="card" id="c10" src="CLUB-10.svg">
+                <img class="card" id="c11" src="CLUB-11-JACK.svg">
+                <img class="card" id="c12" src="CLUB-12-QUEEN.svg">
+                <img class="card" id="c13" src="CLUB-13-KING.svg">
+                <!--Spades-->
+                <img class="card" id="s1" src="SPADE-1.svg">
+                <img class="card" id="s2" src="SPADE-2.svg">
+                <img class="card" id="s3" src="SPADE-3.svg">
+                <img class="card" id="s4" src="SPADE-4.svg">
+                <img class="card" id="s5" src="SPADE-5.svg">
+                <img class="card" id="s6" src="SPADE-6.svg">
+                <img class="card" id="s7" src="SPADE-7.svg">
+                <img class="card" id="s8" src="SPADE-8.svg">
+                <img class="card" id="s9" src="SPADE-9.svg">
+                <img class="card" id="s10" src="SPADE-10.svg">
+                <img class="card" id="s11" src="SPADE-11-JACK.svg">
+                <img class="card" id="s12" src="SPADE-12-QUEEN.svg">
+                <img class="card" i d="s13" src="SPADE-13-KING.svg">
+                <!--Hearts-->
+                <img class="card" id="h1" src="HEART-1.svg">
+                <img class="card" id="h2" src="HEART-2.svg">
+                <img class="card" id="h3" src="HEART-3.svg">
+                <img class="card" id="h4" src="HEART-4.svg">
+                <img class="card" id="h5" src="HEART-5.svg">
+                <img class="card" id="h6" src="HEART-6.svg">
+                <img class="card" id="h7" src="HEART-7.svg">
+                <img class="card" id="h8" src="HEART-8.svg">
+                <img class="card" id="h9" src="HEART-9.svg">
+                <img class="card" id="h10" src="HEART-10.svg">
+                <img class="card" id="h11" src="HEART-11-JACK.svg">
+                <img class="card" id="h12" src="HEART-12-QUEEN.svg">
+                <img class="card" id="h13" src="HEART-13-KING.svg">
+                <!--Diamonds-->
+                <img class="card" id="d1" src="DIAMOND-1.svg">
+                <img class="card" id="d2" src="DIAMOND-2.svg">
+                <img class="card" id="d3" src="DIAMOND-3.svg">
+                <img class="card" id="d4" src="DIAMOND-4.svg">
+                <img class="card" id="d5" src="DIAMOND-5.svg">
+                <img class="card" id="d6" src="DIAMOND-6.svg">
+                <img class="card" id="d7" src="DIAMOND-7.svg">
+                <img class="card" id="d8" src="DIAMOND-8.svg">
+                <img class="card" id="d9" src="DIAMOND-9.svg">
+                <img class="card" id="d10" src="DIAMOND-10.svg">
+                <img class="card" id="d11" src="DIAMOND-11-JACK.svg">
+                <img class="card" id="d12" src="DIAMOND-12-QUEEN.svg">
+                <img class="card" id="d13" src="DIAMOND-13-KING.svg">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+
+<script src="index.js"></script>

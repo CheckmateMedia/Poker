@@ -8,31 +8,57 @@ body {
     font-size: 2em;
     color: sandybrown;
     margin-left: 33%;
-    margin-top: 1em;
+    
     position: fixed;
 }
 
-#table {
-    margin-top: 1em;
+#secondDeal {
+    background-color: sandybrown;
+    font-size: 2em;
+    cursor: pointer;
+ display: none;
 }
 
-.deal {
+#firstDealButton {
     background-color: sandybrown;
     font-size: 2em;
     cursor: pointer;
  
 }
 
-#secondDeal {
+#secondDealButton {
+    background-color: sandybrown;
+    font-size: 2em;
+    cursor: pointer;
     margin-bottom: 2em;
-    
+    display: none;
+    position: fixed;
+}
+
+#thirdDeal {
+    display: none;
+    background-color: sandybrown;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+#endButton {
+    display: none;
+    background-color: sandybrown;
+    font-size: 2em;
+    cursor: pointer;
 }
 
 #firstDealButton {
-    margin-top: 2em;
+    margin-top: 0em;
 }
 
-#one {
+#player1 {
+    display: none;
+    margin-top: 15%;
+}
+
+#player2 {
     display: none;
     margin-top: 15%;
 }
@@ -65,18 +91,27 @@ body {
         display: none;
         
     }
+}
 
     #table {
-        width: 90%;
+        width: 80%;
+    
     }
 
-    button {
-        width: 50%;
-    }
+    #outro {
+        background-color: sandybrown;
+        font-size: 2em;
+        cursor: pointer;
+     display: none;
+     margin-left: 33%;
+     margin-top: 15%;
+    } 
 
-    #two {
-        margin-top: 15%;
-    }
+
+   
+
+
+   
 
    
 

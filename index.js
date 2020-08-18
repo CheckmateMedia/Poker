@@ -1,18 +1,88 @@
 function deal() {
     //Hide
+
     document.getElementById("intro").style.display = 'none'
-    document.getElementById("two").style.display = 'none'
+    document.getElementById("one").style.display = 'none'
     //Show
-    document.getElementById("one").style.display = 'block'
+    document.getElementById("player1").style.display = 'block'
+    document.getElementById("secondDeal").style.display = 'block'
+
+    randomItem.style.display = 'block';
+    randomItem2.style.display = 'block';
+
+}
+function deal2() {
+
+    document.getElementById("intro").style.display = 'none'
+    document.getElementById("one").style.display = 'none'
+    document.getElementById("secondDealButton").style.display = 'none'
+    document.getElementById("table").style.display = 'none'
+
+    //Show
+    document.getElementById("player2").style.display = 'block'
+    document.getElementById("thirdDeal").style.display = 'block'
+
+
+
+    randomItemThree.style.display = 'block';
+    //randomItem4.style.display = 'block';
+
+
+    console.log('fish')
+
+
 }
 
 function newHand() {
     //Show
-    document.getElementById("two").style.display = 'block'
+    document.getElementById("one").style.display = 'block'
+    document.getElementById("footer").style.display = 'block'
+    document.getElementById("secondDealButton").style.display = 'block'
     //Hide
-    document.getElementById("one").style.display = 'none'
+    document.getElementById("player1").style.display = 'none'
     document.getElementById("intro").style.display = 'none'
+    document.getElementById("secondDeal").style.display = 'none'
+    document.getElementById("firstDealButton").style.display = 'none'
+    document.getElementById("thirdDeal").style.display = 'none'
+
 }
+
+function newHand2() {
+    //Show
+    document.getElementById("one").style.display = 'block'
+    document.getElementById("outro").style.display = 'block'
+    document.getElementById("footer").style.display = 'block'
+    document.getElementById("outro").style.display = 'block'
+    //Hide
+
+    document.getElementById("player1").style.display = 'none'
+    document.getElementById("player2").style.display = 'none'
+    document.getElementById("intro").style.display = 'none'
+    document.getElementById("secondDeal").style.display = 'none'
+    document.getElementById("thirdDeal").style.display = 'none'
+
+
+
+}
+
+function reload() {
+    location.reload();
+}
+/*
+function newHand() {
+    //Show
+    document.getElementById("one").style.display = 'block'
+    document.getElementById("secondDealButton").style.display = 'block'
+    //Hide
+    document.getElementById("player1").style.display = 'none'
+    document.getElementById("intro").style.display = 'none'
+    document.getElementById("secondDeal").style.display = 'none'
+    document.getElementById("secondDealButton").style.display = 'none'
+
+
+}
+*/
+//---------------------------------------Player1 Cards
 
 //Clubs
 var c1 = document.getElementById('c1')
@@ -71,7 +141,66 @@ var d11 = document.getElementById('d11')
 var d12 = document.getElementById('d12')
 var d13 = document.getElementById('d13')
 
+//---------------------------------------Player2 Cards
 
+//Clubs
+var c12 = document.getElementById('c12')
+var c22 = document.getElementById('c22')
+var c32 = document.getElementById('c32')
+var c42 = document.getElementById('c42')
+var c52 = document.getElementById('c52')
+var c62 = document.getElementById('c62')
+var c72 = document.getElementById('c72')
+var c82 = document.getElementById('c82')
+var c92 = document.getElementById('c92')
+var c102 = document.getElementById('c102')
+var c112 = document.getElementById('c112')
+var c122 = document.getElementById('c122')
+var c132 = document.getElementById('c132')
+//Spades
+var s12 = document.getElementById('s12')
+var s22 = document.getElementById('s22')
+var s32 = document.getElementById('s32')
+var s42 = document.getElementById('s42')
+var s52 = document.getElementById('s52')
+var s62 = document.getElementById('s62')
+var s72 = document.getElementById('s72')
+var s82 = document.getElementById('s82')
+var s92 = document.getElementById('s92')
+var s102 = document.getElementById('s102')
+var s112 = document.getElementById('s112')
+var s122 = document.getElementById('s122')
+var s132 = document.getElementById('s132')
+//Hearts
+var h12 = document.getElementById('h12')
+var h22 = document.getElementById('h22')
+var h32 = document.getElementById('h32')
+var h42 = document.getElementById('h42')
+var h52 = document.getElementById('h52')
+var h62 = document.getElementById('h62')
+var h72 = document.getElementById('h72')
+var h82 = document.getElementById('h82')
+var h92 = document.getElementById('h92')
+var h102 = document.getElementById('h102')
+var h112 = document.getElementById('h112')
+var h122 = document.getElementById('h122')
+var h132 = document.getElementById('h132')
+//Diamonds
+var d12 = document.getElementById('d12')
+var d22 = document.getElementById('d22')
+var d32 = document.getElementById('d32')
+var d42 = document.getElementById('d42')
+var d52 = document.getElementById('d52')
+var d62 = document.getElementById('d62')
+var d72 = document.getElementById('d72')
+var d82 = document.getElementById('d82')
+var d92 = document.getElementById('d92')
+var d102 = document.getElementById('d102')
+var d112 = document.getElementById('d112')
+var d122 = document.getElementById('d122')
+var d132 = document.getElementById('d132')
+
+//---------------------------------------------------------------------------------------hand1
 //in use
 var myArray = [
     //Clubs
@@ -84,11 +213,29 @@ var myArray = [
     d1, d2, d3, d4, d5, d6, d7, d8, d9, d10, d11, d12, d13,
 ];
 
-var randomItem = myArray[Math.floor(Math.random() * myArray.length)];
-var randomItem2 = myArray[Math.floor(Math.random() * myArray.length)];
+var randomItem = myArray[Math.floor(Math.random() * 52)];
+var randomItem2 = myArray[Math.floor(Math.random() * 52)];
 
-randomItem.style.display = 'block';
-randomItem2.style.display = 'block';
+
+
+//--------------------------------------------------------------------------------hand 2
+var myArraytwo = [
+    //Clubs
+    c12, c22, c32, c42, c52, c62, c72, c82, c92, c102, c112, c122, c132,
+    //Spades
+    s12, s22, s32, s42, s52, s62, s72, s82, s92, s102, s112, s122, s132,
+    //Hearts
+    h12, h22, h32, h42, h52, h62, h72, h82, h92, h102, h112, h122, h13,
+    //Diamonds
+    d12, d22, d32, d42, d52, d62, d72, d82, d92, d102, d112, d122, d132,
+];
+
+var randomItemThree = myArraytwo[Math.floor(Math.random() * 52)];
+var randomItem4 = myArraytwo[Math.floor(Math.random() * 52)];
+
+
+
+
 
 
 
